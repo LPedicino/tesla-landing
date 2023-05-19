@@ -3,32 +3,26 @@ import Section from "./Section.astro";
 ---
 
 <Section
-  title="Model 3"
-  subtitle="Concertar una prueba de conducción"
+  title="Solar y Powerwall"
+  subtitle="Energía para todos"
   color="black"
-  id="model-3"
+  id="powerwall"
 >
   <div slot="footer" class="mx-auto">
-    <a
-    class="border-[3px] border-gray-500 bg-gray-500 text-sm rounded font-medium text-white px-12 py-2 inline-block transition-colors hover:border-gray-800 hover:bg-gray-800"
-    href="#"
-    >
-    Nuestras tiendas</a
-    >
     <a
     class="border-[3px] border-white hover:border-black bg-white text-sm rounded font-medium px-12 py-2 transition-colors hover:bg-black hover:text-white inline-flex justify-center items-center text-black"
     href="#"
     >
-    Autonomía Tesla</a
+      Saber más</a
     >
   </div>
 
   <img
     slot="background"
-    alt="Model 3"
+    alt="Solar y Powerwall"
     class="h-full w-full object-cover object-center"
-    src="model-3.avif"
-    id="bg-image-model3"
+    src="powerwall.avif"
+    id="bg-image-powerwall"
   />
 </Section>
 
@@ -44,11 +38,11 @@ import Section from "./Section.astro";
     }
   }
 
-  var imageElement = document.querySelector("#bg-image-model3") as HTMLImageElement;
+  var imageElement = document.querySelector("#bg-image-powerwall") as HTMLImageElement;
 
   if (isEdge()) {
-    imageElement.src = "model-3.webp";
+    imageElement.src = "powerwall.webp";
   } else {
-    imageElement.src = "model-3.avif";
+    imageElement.src = "powerwall.avif";
   }
 </script>

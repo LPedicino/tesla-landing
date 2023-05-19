@@ -3,32 +3,32 @@ import Section from "./Section.astro";
 ---
 
 <Section
-  title="Model 3"
-  subtitle="Concertar una prueba de conducción"
+  title="Model X"
+  subtitle="Programe una consulta virtual"
   color="black"
-  id="model-3"
+  id="model-x"
 >
-  <div slot="footer" class="mx-auto">
+  <div slot="footer" class=" mx-auto">
     <a
     class="border-[3px] border-gray-500 bg-gray-500 text-sm rounded font-medium text-white px-12 py-2 inline-block transition-colors hover:border-gray-800 hover:bg-gray-800"
     href="#"
     >
-    Nuestras tiendas</a
+      Pedido personalizado</a
     >
     <a
     class="border-[3px] border-white hover:border-black bg-white text-sm rounded font-medium px-12 py-2 transition-colors hover:bg-black hover:text-white inline-flex justify-center items-center text-black"
     href="#"
     >
-    Autonomía Tesla</a
+      Saber más</a
     >
   </div>
 
   <img
     slot="background"
-    alt="Model 3"
+    alt="Model X"
     class="h-full w-full object-cover object-center"
-    src="model-3.avif"
-    id="bg-image-model3"
+    src="model-x.avif"
+    id="bg-image-modelx"
   />
 </Section>
 
@@ -44,11 +44,11 @@ import Section from "./Section.astro";
     }
   }
 
-  var imageElement = document.querySelector("#bg-image-model3") as HTMLImageElement;
+  var imageElement = document.querySelector("#bg-image-modelx") as HTMLImageElement;
 
   if (isEdge()) {
-    imageElement.src = "model-3.webp";
+    imageElement.src = "model-x.webp";
   } else {
-    imageElement.src = "model-3.avif";
+    imageElement.src = "model-x.avif";
   }
 </script>
